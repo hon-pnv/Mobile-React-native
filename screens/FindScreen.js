@@ -10,5 +10,4 @@ const Find = () => {
 };
 
 export default Find;
-
 const styles = StyleSheet.create({});

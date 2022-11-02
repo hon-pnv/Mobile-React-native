@@ -97,7 +97,7 @@ const TopProducts = () => {
 };
 const styles = StyleSheet.create({
     container: {
-        marginTop: 20,
+        marginBottom: -200,
     },
     item: {
         Width: 137,

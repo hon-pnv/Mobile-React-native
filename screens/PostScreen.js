@@ -10,5 +10,4 @@ const Post = () => {
 };
 
 export default Post;
-
 const styles = StyleSheet.create({});

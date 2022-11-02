@@ -1,18 +1,18 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import { Home } from '../screens/HomeScreen';
-import {Find} from '../screens/FindScreen';
-import {Post} from '../screens/PostScreen';
-import {Chat } from '../screens/ChatScreen';
+import Home from '../screens/HomeScreen';
+import Find from '../screens/FindScreen';
+import Post from '../screens/PostScreen';
 import Setting from '../screens/Setting';
+import Chat from '../screens/ChatScreen';
 
 const BottomTab = createBottomTabNavigator();
 
 const iconUrl =
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmrjmWv58Qw-Cjo05ZBK8XWtOU0IDsrHhATg&usqp=CAU';
 
-const BottomTabs = () => {
+const tabs = () => {
   return (
     <BottomTab.Navigator sceneContainerStyle={{backgroundColor: 'white'}}>
       <BottomTab.Screen
@@ -39,14 +39,14 @@ const BottomTabs = () => {
       />
 
       <BottomTab.Screen
-        name="FavouriteTab"
+        name="FindTab"
         component={Find}
         options={() => {
           return {
             tabBarLabel: ({focused}) => {
               return (
                 <Text style={{color: focused ? 'red' : 'black'}}>
-                  {'Favourite'}
+                  {'Find'}
                 </Text>
               );
             },
@@ -64,14 +64,14 @@ const BottomTabs = () => {
       />
 
       <BottomTab.Screen
-        name="MyBookingTab"
+        name="PostTab"
         component={Post}
         options={() => {
           return {
             tabBarLabel: ({focused}) => {
               return (
                 <Text style={{color: focused ? 'red' : 'black'}}>
-                  {'Booking'}
+                  {'Post'}
                 </Text>
               );
             },
@@ -139,7 +139,7 @@ const BottomTabs = () => {
   );
 };
 
-export default BottomTabs;
+export default tabs;
 
 const styles = StyleSheet.create({
   icon: {width: 30, height: 30},
