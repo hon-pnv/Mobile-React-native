@@ -14,7 +14,7 @@ function ProDetail({ navigation }) {
       </Text>
       <Text style={styles.captionTitle}> Etiam mollis metus mon purus</Text>
       <View style={styles.logo}>
-        <Image style={styles.slideImage} source={require('../assets/Images/image5.png')} />
+        <Image style={styles.slideImage} source={require('../assets/Images/image4.png')} />
       </View>
       <View style={styles.introDetail}>
         <View>

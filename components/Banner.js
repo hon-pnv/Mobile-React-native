@@ -10,8 +10,8 @@ const Banner = () => {
         source={require('../assets/Images/image1.png')}
       />
       <View style={styles.title}>
-        <Text style={styles.title_main}>Are you Okey?</Text>
-        <Text style={styles.title_item}>Have a great day!</Text>
+        <Text style={styles.title_main}>Save extra on every order</Text>
+        <Text style={styles.title_item}>Etiam mollis metus non faucibus sollicitudin.</Text>
       </View>
     </View>
   );
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     width: 361,
     height: 203,
     left: 8,
-    bottom: 200,
+    bottom: 270,
   },
   logo: {
     width: 360,

@@ -1,26 +1,17 @@
-import {Button, StyleSheet, Text,Image, View} from 'react-native';
+import {Button, StyleSheet, Text,Image, View, ScrollView} from 'react-native';
 import React from 'react';
 import Banner from '../components/Banner';
+import Product from '../components/Products';
+// import AllProduct from '../components/AllProduct';
 const Home = ({navigation}) => {
   return (
     <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
-      <Text style={{fontSize: 24}}>Home</Text>
-      <Banner />
-      <View style={styles.container}>
-        
-        <View style={styles.des}>
-          <Image
-            style={styles.logo}
-            source={require('../assets/Images/image7.png')}
-          />
-          <View style={styles.title}>
-            <Text>Sugar Substitute</Text>
-            <Text>Price: 120k</Text>
-          </View>
-        </View>
-        
+      <View style={{marginTop: 300}}>
+        <Banner />
       </View>
-      <Button
+      <Product />
+      {/* <AllProduct /> */}
+      <Button 
         title="Go to detail"
         onPress={() => {
           navigation.navigate('ProDetail', {headerTitle: 'Product 1'});
@@ -45,6 +36,9 @@ const styles = StyleSheet.create({
     top: -100,
     bottom: 200,
   },
+  // btn:{
+  //   top:-500,
+  // },
   title: {
     width:150,
     height:50,

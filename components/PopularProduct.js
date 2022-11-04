@@ -1,6 +1,5 @@
 import react from "react";
 import { View, Text, Image, ScrollView } from "react-native";
-import styles from "../styles";
 const PopularProduct = (props) => {
     return (
         <ScrollView>
