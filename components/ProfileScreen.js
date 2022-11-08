@@ -3,12 +3,9 @@ import { View, Text, Image, StyleSheet, BackHandler} from 'react-native';
 function Profile() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <View style={styles.profile}>
-          <Text style={styles.title}>My profile</Text>
-        </View>
         <View style={styles.content}>
           <View style={styles.info}>
-            <Image style={styles.AvtImage} source={require('../assets/Images/people.png')} />
+            <Image style={styles.AvtImage} source={require('../assets/Images/avata.png')} />
             <Text style={styles.name}>Hi, Ben Cline</Text>
             <Text style={styles.intro}>Welcome to Medtech</Text>
           </View>
@@ -48,9 +45,6 @@ function Profile() {
   export default Profile;
 
   const styles = StyleSheet.create({
-    profile: {
-      bottom: -40,
-    },
     content:{
       top:-80,
       left:-10,
@@ -58,7 +52,8 @@ function Profile() {
     },
     smalltitle: {
       left: 20,
-
+      
+      
     },
     title: {
       color:'black',
@@ -70,7 +65,7 @@ function Profile() {
       flexDirection: 'row',
       marginBottom: 10,
       left: -90,
-
+      
     },
     info: {
       bottom: 10
@@ -79,16 +74,19 @@ function Profile() {
     intro: {
       bottom: 120,
       fontSize:15,
+      right: -20,
     },
     name: {
       fontSize: 18,
       bottom: 130,
       color: 'black',
       marginLeft: 10,
+      right: -20,
+
     },
     AvtImage: {
-      width: 70,
-      height: 70,
+      width: 100,
+      height: 120,
       bottom: 50,
       left: -88,
     },

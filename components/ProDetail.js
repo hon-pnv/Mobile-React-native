@@ -50,8 +50,15 @@ function ProDetail({ navigation }) {
           </View>
         </View>
       </View>
-      <View>
+      <View style={styles.details}>
         <Text style={styles.discript}>Product Details</Text>
+        <Text style={{marginTop: 10}}>Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi ut nisi odio. Nulla facilisi.
+Nunc risus massa, gravida id egestas a, pretium vel tellus. Praesent feugiat diam sit amet pulvinar finibus. Etiam et nisi aliquet, accumsan nisi sit.</Text>
+      </View>
+      <View style={styles.rating}>
+        <Text>Rating and Reviews</Text>
+        <Image style={styles.rating} source={require('../assets/Images/rating.png')} />
+
       </View>
       <View style={styles.bnt}>
         <Button 
@@ -63,6 +70,12 @@ function ProDetail({ navigation }) {
     );
   }
   const styles = StyleSheet.create({
+    details: {
+      left: 10,
+    },
+    rating: {
+      left: 10,
+    },
     container: {
       backgroundColor: '#FFFF',
     },
@@ -163,7 +176,9 @@ function ProDetail({ navigation }) {
       color: 'red',
     },
     bnt: {
-        bottom: -100,
+      width:200,
+      bottom: -60,
+      left:100,
     }
   });
 

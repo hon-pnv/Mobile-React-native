@@ -2,21 +2,23 @@ import {Button, StyleSheet, Text,Image, View, ScrollView} from 'react-native';
 import React from 'react';
 import Banner from '../components/Banner';
 import Product from '../components/Products';
-// import AllProduct from '../components/AllProduct';
+import AllProduct from '../components/AllProduct';
 const Home = ({navigation}) => {
   return (
     <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
-      <View style={{marginTop: 300}}>
+      <View style={{marginTop: 450}}>
         <Banner />
       </View>
       <Product />
-      {/* <AllProduct /> */}
-      <Button 
-        title="Go to detail"
-        onPress={() => {
-          navigation.navigate('ProDetail', {headerTitle: 'Product 1'});
-        }}
-      />
+      <AllProduct />
+      <View style={{top: -200}}>
+        <Button 
+          title="Go to detail"
+          onPress={() => {
+            navigation.navigate('ProDetail', {headerTitle: 'Product 1'});
+          }}
+        />
+      </View>
     </View>
   );
 };

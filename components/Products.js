@@ -37,7 +37,7 @@ const Product = () => {
 };
 const styles = StyleSheet.create({
   container: {
-    top: -90,
+    top: -100,
   },
   diabetic: {
     top: -10,

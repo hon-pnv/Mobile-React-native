@@ -31,7 +31,7 @@ const AllProduct = () => {
 };
 const styles = StyleSheet.create({
   container: {
-    top: -50,
+    top: -75,
   },
   diabetic: {
     top: -10,
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     top: -145,
   },
   items: {
-    top: -120,
+    top: -140,
     flexDirection: 'row',
     justifyContent: 'center',
   },
@@ -61,7 +61,6 @@ const styles = StyleSheet.create({
     height:150,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
-    marginBottom: 20,
   },
   proName: {
     width: 100,

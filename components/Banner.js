@@ -4,14 +4,13 @@ import React from 'react';
 const Banner = () => {
   return (
     <View style={styles.container}>
-      <Text>15:30</Text>
       <Image
         style={styles.logo}
         source={require('../assets/Images/image1.png')}
       />
       <View style={styles.title}>
-        <Text style={styles.title_main}>Save extra on every order</Text>
-        <Text style={styles.title_item}>Etiam mollis metus non faucibus sollicitudin.</Text>
+        {/* <Text style={styles.title_main}>Save extra on every order</Text> */}
+        {/* <Text style={styles.title_item}>Etiam mollis metus non faucibus sollicitudin.</Text> */}
       </View>
     </View>
   );
@@ -21,11 +20,11 @@ const styles = StyleSheet.create({
     width: 361,
     height: 203,
     left: 8,
-    bottom: 270,
+    bottom: 250,
   },
   logo: {
-    width: 360,
-    height: 200,
+    width: 340,
+    height: 190,
     borderRadius: 20,
   
   },
