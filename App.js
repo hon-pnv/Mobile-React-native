@@ -120,6 +120,7 @@
 import Tabs from "./components/TabNavigation";
 import {NavigationContainer} from '@react-navigation/native';
 
+
 const App = () => (
   <NavigationContainer>
     <Tabs/>

@@ -5,7 +5,7 @@ import {View, Text, Button, Image, StyleSheet} from 'react-native';
 import Home from '../screens/HomeScreen';
 import Profile from './ProfileScreen';
 import ProDetail from './ProDetail';
-import GoogleMap from '../screens/GoogleMapScreen';
+import Map from '../screens/GoogleMapScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -50,7 +50,7 @@ function Tabs() {
             <Image source={require('../assets/Images/fag.png')} />
           ),
         }}
-        component={GoogleMap}
+        component={Map}
       />
       <Tab.Screen
         name="ProDetail"
